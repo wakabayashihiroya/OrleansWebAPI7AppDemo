@@ -31,3 +31,13 @@ C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\obj\Debug\net7.0\refi
 C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\obj\Debug\net7.0\OrleansWebAPI7AppDemo.pdb
 C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\obj\Debug\net7.0\OrleansWebAPI7AppDemo.genruntimeconfig.cache
 C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\obj\Debug\net7.0\ref\OrleansWebAPI7AppDemo.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Orleans.Core.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Orleans.Core.Abstractions.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Orleans.Persistence.Memory.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Orleans.Runtime.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Orleans.Serialization.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Orleans.Serialization.Abstractions.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Users\VD022_USER\Documents\GitHub\OrleansWebAPI7AppDemo\bin\Debug\net7.0\System.Memory.Data.dll

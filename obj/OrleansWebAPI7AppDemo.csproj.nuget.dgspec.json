@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.Orleans.Server": {
+              "target": "Package",
+              "version": "[7.1.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
