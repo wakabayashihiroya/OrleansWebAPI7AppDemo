@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.Orleans.Reminders": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            },
             "Microsoft.Orleans.Server": {
               "target": "Package",
               "version": "[7.1.1, )"

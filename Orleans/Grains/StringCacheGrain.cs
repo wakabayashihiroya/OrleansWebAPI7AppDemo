@@ -1,5 +1,5 @@
 ﻿using Orleans.Runtime;
-using OrleansWebAPI7AppDemo.Orleans.Interfaces;
+using OrleansWebAPI7AppDemo.Orleans.Abstractions;
 
 namespace OrleansWebAPI7AppDemo.Orleans.Grains
 {

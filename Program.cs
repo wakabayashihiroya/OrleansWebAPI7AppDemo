@@ -15,6 +15,7 @@ builder.Host.UseOrleans(siloBuilder =>
 {
     siloBuilder.UseLocalhostClustering();
     siloBuilder.AddMemoryGrainStorage("urls");
+    siloBuilder.UseInMemoryReminderService();
 });
 
 builder.Services.AddSwaggerGen();

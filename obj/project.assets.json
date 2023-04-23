@@ -338,10 +338,10 @@
           }
         }
       },
-      "Microsoft.Orleans.Analyzers/7.1.1": {
+      "Microsoft.Orleans.Analyzers/7.1.2": {
         "type": "package"
       },
-      "Microsoft.Orleans.CodeGenerator/7.1.1": {
+      "Microsoft.Orleans.CodeGenerator/7.1.2": {
         "type": "package",
         "build": {
           "buildTransitive/Microsoft.Orleans.CodeGenerator.props": {}
@@ -350,7 +350,7 @@
           "buildMultiTargeting/Microsoft.Orleans.CodeGenerator.props": {}
         }
       },
-      "Microsoft.Orleans.Core/7.1.1": {
+      "Microsoft.Orleans.Core/7.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "7.0.0",
@@ -360,7 +360,7 @@
           "Microsoft.Extensions.Logging": "7.0.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "7.1.1",
+          "Microsoft.Orleans.Core.Abstractions": "7.1.2",
           "Newtonsoft.Json": "13.0.2",
           "System.Memory.Data": "7.0.0"
         },
@@ -375,11 +375,11 @@
           }
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/7.1.1": {
+      "Microsoft.Orleans.Core.Abstractions/7.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging": "7.0.0",
-          "Microsoft.Orleans.Serialization": "7.1.1"
+          "Microsoft.Orleans.Serialization": "7.1.2"
         },
         "compile": {
           "lib/net7.0/Orleans.Core.Abstractions.dll": {
@@ -408,10 +408,28 @@
           }
         }
       },
-      "Microsoft.Orleans.Runtime/7.1.1": {
+      "Microsoft.Orleans.Reminders/7.1.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Orleans.Core": "7.1.1"
+          "Microsoft.Orleans.Core.Abstractions": "7.1.2",
+          "Microsoft.Orleans.Runtime": "7.1.2",
+          "Microsoft.Orleans.Sdk": "7.1.2"
+        },
+        "compile": {
+          "lib/net7.0/Orleans.Reminders.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Orleans.Reminders.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Orleans.Runtime/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Core": "7.1.2"
         },
         "compile": {
           "lib/net7.0/Orleans.Runtime.dll": {
@@ -424,12 +442,12 @@
           }
         }
       },
-      "Microsoft.Orleans.Sdk/7.1.1": {
+      "Microsoft.Orleans.Sdk/7.1.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Orleans.Analyzers": "7.1.1",
-          "Microsoft.Orleans.CodeGenerator": "7.1.1",
-          "Microsoft.Orleans.Core": "7.1.1"
+          "Microsoft.Orleans.Analyzers": "7.1.2",
+          "Microsoft.Orleans.CodeGenerator": "7.1.2",
+          "Microsoft.Orleans.Core": "7.1.2"
         },
         "build": {
           "buildTransitive/Microsoft.Orleans.Sdk.targets": {}
@@ -438,14 +456,14 @@
           "buildMultiTargeting/Microsoft.Orleans.Sdk.targets": {}
         }
       },
-      "Microsoft.Orleans.Serialization/7.1.1": {
+      "Microsoft.Orleans.Serialization/7.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0",
           "Microsoft.Extensions.Options": "7.0.0",
-          "Microsoft.Orleans.Serialization.Abstractions": "7.1.1",
+          "Microsoft.Orleans.Serialization.Abstractions": "7.1.2",
           "System.IO.Hashing": "7.0.0"
         },
         "compile": {
@@ -459,7 +477,7 @@
           }
         }
       },
-      "Microsoft.Orleans.Serialization.Abstractions/7.1.1": {
+      "Microsoft.Orleans.Serialization.Abstractions/7.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
@@ -1378,23 +1396,23 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Microsoft.Orleans.Analyzers/7.1.1": {
-      "sha512": "c4Ec/fwjFX/0YWy2l8M/AYEluduG2QuoJgHVkXeZHEBh1U2GtfT9h0vpoBceNEZ0w3zyl88GUlb7x/WizHoQHw==",
+    "Microsoft.Orleans.Analyzers/7.1.2": {
+      "sha512": "/YaW/JE1WMJJRALNAdLjsOO7F5FWcFMglWEW+UXBFgsPfchQC1W0jTgRc7cBDsOPT6ceQv0MRZFy8mICEBuwaA==",
       "type": "package",
-      "path": "microsoft.orleans.analyzers/7.1.1",
+      "path": "microsoft.orleans.analyzers/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Orleans.Analyzers.dll",
         "logo_128.png",
-        "microsoft.orleans.analyzers.7.1.1.nupkg.sha512",
+        "microsoft.orleans.analyzers.7.1.2.nupkg.sha512",
         "microsoft.orleans.analyzers.nuspec"
       ]
     },
-    "Microsoft.Orleans.CodeGenerator/7.1.1": {
-      "sha512": "KO2Mrx2K+d1q9FIvtW6mJilDcia2XF3aFVfkd2W4PYL51fKW7bKbTwiV4t8P+MrZge1u1TizZ1F1HRI4YuIhdg==",
+    "Microsoft.Orleans.CodeGenerator/7.1.2": {
+      "sha512": "oldxOEeonBAbQ8j3tl6KQ3vEZAIJb0N73ItHTOiaJDyvUlkEeko5Wb+nR2C5jXhqYAK+9/RgvFZJyFaS7pk2gA==",
       "type": "package",
-      "path": "microsoft.orleans.codegenerator/7.1.1",
+      "path": "microsoft.orleans.codegenerator/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1403,35 +1421,35 @@
         "buildMultiTargeting/Microsoft.Orleans.CodeGenerator.props",
         "buildTransitive/Microsoft.Orleans.CodeGenerator.props",
         "logo_128.png",
-        "microsoft.orleans.codegenerator.7.1.1.nupkg.sha512",
+        "microsoft.orleans.codegenerator.7.1.2.nupkg.sha512",
         "microsoft.orleans.codegenerator.nuspec"
       ]
     },
-    "Microsoft.Orleans.Core/7.1.1": {
-      "sha512": "Ihvc3kZxDxe/U97r9k7wWrHC+B+91GjBMx5+GyJ6TizaFrbUoHdet8oJow9eOAYagrP4is1uQqM5etFGjf1VSQ==",
+    "Microsoft.Orleans.Core/7.1.2": {
+      "sha512": "cNxTiNEisZ7BzUJRZRR9SLn7b0Psg/7Th0LzXsfPpqEgQUzE9qfuJMBy+fzipijLccGk5v4GjUGEAAhOysBoHQ==",
       "type": "package",
-      "path": "microsoft.orleans.core/7.1.1",
+      "path": "microsoft.orleans.core/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net7.0/Orleans.Core.dll",
         "lib/net7.0/Orleans.Core.xml",
         "logo_128.png",
-        "microsoft.orleans.core.7.1.1.nupkg.sha512",
+        "microsoft.orleans.core.7.1.2.nupkg.sha512",
         "microsoft.orleans.core.nuspec"
       ]
     },
-    "Microsoft.Orleans.Core.Abstractions/7.1.1": {
-      "sha512": "IxsAoLQEA8XjQZUm8HdhdaI2ynPUTkoUhTaGxhVAkwkj0kGCGSJ0TYjafYZ7TVM9aH7bAeB9JMp2QOJq2ej9sA==",
+    "Microsoft.Orleans.Core.Abstractions/7.1.2": {
+      "sha512": "6YSR3+t76KcZpIAKSBPmSe9x6zHav/KaKjJruy9tAmd/ADnroCCI023uPqsJZwO9b/OZ2VCZ3LgMLf0c7YBnQw==",
       "type": "package",
-      "path": "microsoft.orleans.core.abstractions/7.1.1",
+      "path": "microsoft.orleans.core.abstractions/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net7.0/Orleans.Core.Abstractions.dll",
         "lib/net7.0/Orleans.Core.Abstractions.xml",
         "logo_128.png",
-        "microsoft.orleans.core.abstractions.7.1.1.nupkg.sha512",
+        "microsoft.orleans.core.abstractions.7.1.2.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
@@ -1449,24 +1467,38 @@
         "microsoft.orleans.persistence.memory.nuspec"
       ]
     },
-    "Microsoft.Orleans.Runtime/7.1.1": {
-      "sha512": "B3w3cZTrgQY+tVV50w5M7HpQfv1BDX7B6uJ4FkZni+lAWWRJPRmw82iDsG12L7cZo9kfxnXv6lsI72+lYRRPVg==",
+    "Microsoft.Orleans.Reminders/7.1.2": {
+      "sha512": "QbIM11LzEl9YVGAgJgzbg5s5/kE9Zt300eLfyHbPcjIDwcns9PSO8w+jPhR6fVroYq2bFBLHgF0CHn5fFK76Qw==",
       "type": "package",
-      "path": "microsoft.orleans.runtime/7.1.1",
+      "path": "microsoft.orleans.reminders/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net7.0/Orleans.Reminders.dll",
+        "lib/net7.0/Orleans.Reminders.xml",
+        "logo_128.png",
+        "microsoft.orleans.reminders.7.1.2.nupkg.sha512",
+        "microsoft.orleans.reminders.nuspec"
+      ]
+    },
+    "Microsoft.Orleans.Runtime/7.1.2": {
+      "sha512": "JX3EItavz7oelUhOVtiFlvK6uqkOhGiCMes91NeQZI+4dL1yD9Xny1agtScl8RYbiG2PLKPdcWVPXz0JQxlGfA==",
+      "type": "package",
+      "path": "microsoft.orleans.runtime/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net7.0/Orleans.Runtime.dll",
         "lib/net7.0/Orleans.Runtime.xml",
         "logo_128.png",
-        "microsoft.orleans.runtime.7.1.1.nupkg.sha512",
+        "microsoft.orleans.runtime.7.1.2.nupkg.sha512",
         "microsoft.orleans.runtime.nuspec"
       ]
     },
-    "Microsoft.Orleans.Sdk/7.1.1": {
-      "sha512": "M+XIF3Tw6H7XwGinEGfXl4E7zmfQmTeVuPtBLwKDHMV74omkYkwjND2pxKgpLM48WJRBJBVrpyDDVh2DrY25iw==",
+    "Microsoft.Orleans.Sdk/7.1.2": {
+      "sha512": "WQQ8t5LrOawLFFT2wfY+FPp8rO2s6PJp5TQ5bwLfv4gplmrAhJ33V49d6JSPcP/0X7vE9/faNBvqrh6wlKbqOg==",
       "type": "package",
-      "path": "microsoft.orleans.sdk/7.1.1",
+      "path": "microsoft.orleans.sdk/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1474,14 +1506,14 @@
         "buildMultiTargeting/Microsoft.Orleans.Sdk.targets",
         "buildTransitive/Microsoft.Orleans.Sdk.targets",
         "logo_128.png",
-        "microsoft.orleans.sdk.7.1.1.nupkg.sha512",
+        "microsoft.orleans.sdk.7.1.2.nupkg.sha512",
         "microsoft.orleans.sdk.nuspec"
       ]
     },
-    "Microsoft.Orleans.Serialization/7.1.1": {
-      "sha512": "ByDObmxNlySdP9cuEvRd1N+lifOdyflzhX0XvImJoWsoUF7Zj8Q1WQJ7N9JKPGJCyHdKJzTZYpuHEU62PwqwtA==",
+    "Microsoft.Orleans.Serialization/7.1.2": {
+      "sha512": "CxFkzTGBPhuZBFtEsbY1Z7VkWqR6nFPmzeH9HWNxOafHv80200rQlxR72HZFZFOH9niE5ZgVJVAEGeTdERJdZA==",
       "type": "package",
-      "path": "microsoft.orleans.serialization/7.1.1",
+      "path": "microsoft.orleans.serialization/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1490,14 +1522,14 @@
         "lib/netstandard2.1/Orleans.Serialization.dll",
         "lib/netstandard2.1/Orleans.Serialization.xml",
         "logo_128.png",
-        "microsoft.orleans.serialization.7.1.1.nupkg.sha512",
+        "microsoft.orleans.serialization.7.1.2.nupkg.sha512",
         "microsoft.orleans.serialization.nuspec"
       ]
     },
-    "Microsoft.Orleans.Serialization.Abstractions/7.1.1": {
-      "sha512": "X+xZ/k6ME3q5R8Du+vwfv9y74VUiUCeb0Z50D7ydk7f33x6Wb6B+K+RTKrX+Bqdn48OfkzZJnn4Y9KQvx+9ksw==",
+    "Microsoft.Orleans.Serialization.Abstractions/7.1.2": {
+      "sha512": "rfHwogUtWOcaimMX1dO9u8GyLtqg7XyIuUkbMu2FzvOr0W19BcBUOZK0LeC1pCN0GKsGkUI9EJOmiXvNv4FarA==",
       "type": "package",
-      "path": "microsoft.orleans.serialization.abstractions/7.1.1",
+      "path": "microsoft.orleans.serialization.abstractions/7.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1506,7 +1538,7 @@
         "lib/netstandard2.0/Orleans.Serialization.Abstractions.dll",
         "lib/netstandard2.0/Orleans.Serialization.Abstractions.xml",
         "logo_128.png",
-        "microsoft.orleans.serialization.abstractions.7.1.1.nupkg.sha512",
+        "microsoft.orleans.serialization.abstractions.7.1.2.nupkg.sha512",
         "microsoft.orleans.serialization.abstractions.nuspec"
       ]
     },
@@ -1829,6 +1861,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
+      "Microsoft.Orleans.Reminders >= 7.1.2",
       "Microsoft.Orleans.Server >= 7.1.1",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -1875,6 +1908,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.5, )"
+          },
+          "Microsoft.Orleans.Reminders": {
+            "target": "Package",
+            "version": "[7.1.2, )"
           },
           "Microsoft.Orleans.Server": {
             "target": "Package",

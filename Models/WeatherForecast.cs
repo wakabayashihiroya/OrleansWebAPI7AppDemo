@@ -1,4 +1,4 @@
-namespace OrleansWebAPI7AppDemo
+namespace OrleansWebAPI7AppDemo.Models
 {
     public class WeatherForecast
     {

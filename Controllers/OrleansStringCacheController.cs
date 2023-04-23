@@ -1,19 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Orleans.Runtime;
-using OrleansWebAPI7AppDemo.Orleans.Interfaces;
+using OrleansWebAPI7AppDemo.Orleans.Abstractions;
 
 namespace OrleansWebAPI7AppDemo.Controllers
 {
     // https://learn.microsoft.com/ja-jp/dotnet/orleans/quickstarts/build-your-first-orleans-app?tabs=visual-studio
     [ApiController]
     [Route("[controller]")]
-    public class StringCacheController : ControllerBase
+    public class OrleansStringCacheController : ControllerBase
     {
 
-        private readonly ILogger<StringCacheController> _logger;
+        private readonly ILogger<OrleansStringCacheController> _logger;
         private readonly IGrainFactory _grains;
 
-        public StringCacheController(ILogger<StringCacheController> logger , IGrainFactory grains)
+        public OrleansStringCacheController(ILogger<OrleansStringCacheController> logger , IGrainFactory grains)
         {
             _logger = logger;
             _grains = grains;

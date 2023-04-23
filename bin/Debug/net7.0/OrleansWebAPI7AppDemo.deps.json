@@ -9,6 +9,7 @@
       "OrleansWebAPI7AppDemo/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
+          "Microsoft.Orleans.Reminders": "7.1.2",
           "Microsoft.Orleans.Server": "7.1.1",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -115,9 +116,9 @@
           }
         }
       },
-      "Microsoft.Orleans.Analyzers/7.1.1": {},
-      "Microsoft.Orleans.CodeGenerator/7.1.1": {},
-      "Microsoft.Orleans.Core/7.1.1": {
+      "Microsoft.Orleans.Analyzers/7.1.2": {},
+      "Microsoft.Orleans.CodeGenerator/7.1.2": {},
+      "Microsoft.Orleans.Core/7.1.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "7.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
@@ -126,7 +127,7 @@
           "Microsoft.Extensions.Logging": "7.0.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "7.1.1",
+          "Microsoft.Orleans.Core.Abstractions": "7.1.2",
           "Newtonsoft.Json": "13.0.2",
           "System.Memory.Data": "7.0.0"
         },
@@ -137,10 +138,10 @@
           }
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/7.1.1": {
+      "Microsoft.Orleans.Core.Abstractions/7.1.2": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "7.0.0",
-          "Microsoft.Orleans.Serialization": "7.1.1"
+          "Microsoft.Orleans.Serialization": "7.1.2"
         },
         "runtime": {
           "lib/net7.0/Orleans.Core.Abstractions.dll": {
@@ -151,7 +152,7 @@
       },
       "Microsoft.Orleans.Persistence.Memory/7.1.1": {
         "dependencies": {
-          "Microsoft.Orleans.Runtime": "7.1.1"
+          "Microsoft.Orleans.Runtime": "7.1.2"
         },
         "runtime": {
           "lib/net7.0/Orleans.Persistence.Memory.dll": {
@@ -160,9 +161,22 @@
           }
         }
       },
-      "Microsoft.Orleans.Runtime/7.1.1": {
+      "Microsoft.Orleans.Reminders/7.1.2": {
         "dependencies": {
-          "Microsoft.Orleans.Core": "7.1.1"
+          "Microsoft.Orleans.Core.Abstractions": "7.1.2",
+          "Microsoft.Orleans.Runtime": "7.1.2",
+          "Microsoft.Orleans.Sdk": "7.1.2"
+        },
+        "runtime": {
+          "lib/net7.0/Orleans.Reminders.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Orleans.Runtime/7.1.2": {
+        "dependencies": {
+          "Microsoft.Orleans.Core": "7.1.2"
         },
         "runtime": {
           "lib/net7.0/Orleans.Runtime.dll": {
@@ -171,20 +185,20 @@
           }
         }
       },
-      "Microsoft.Orleans.Sdk/7.1.1": {
+      "Microsoft.Orleans.Sdk/7.1.2": {
         "dependencies": {
-          "Microsoft.Orleans.Analyzers": "7.1.1",
-          "Microsoft.Orleans.CodeGenerator": "7.1.1",
-          "Microsoft.Orleans.Core": "7.1.1"
+          "Microsoft.Orleans.Analyzers": "7.1.2",
+          "Microsoft.Orleans.CodeGenerator": "7.1.2",
+          "Microsoft.Orleans.Core": "7.1.2"
         }
       },
-      "Microsoft.Orleans.Serialization/7.1.1": {
+      "Microsoft.Orleans.Serialization/7.1.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0",
           "Microsoft.Extensions.Options": "7.0.0",
-          "Microsoft.Orleans.Serialization.Abstractions": "7.1.1",
+          "Microsoft.Orleans.Serialization.Abstractions": "7.1.2",
           "System.IO.Hashing": "7.0.0"
         },
         "runtime": {
@@ -194,7 +208,7 @@
           }
         }
       },
-      "Microsoft.Orleans.Serialization.Abstractions/7.1.1": {
+      "Microsoft.Orleans.Serialization.Abstractions/7.1.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
@@ -208,8 +222,8 @@
       "Microsoft.Orleans.Server/7.1.1": {
         "dependencies": {
           "Microsoft.Orleans.Persistence.Memory": "7.1.1",
-          "Microsoft.Orleans.Runtime": "7.1.1",
-          "Microsoft.Orleans.Sdk": "7.1.1"
+          "Microsoft.Orleans.Runtime": "7.1.2",
+          "Microsoft.Orleans.Sdk": "7.1.2"
         }
       },
       "Newtonsoft.Json/13.0.2": {
@@ -425,33 +439,33 @@
       "path": "microsoft.openapi/1.4.3",
       "hashPath": "microsoft.openapi.1.4.3.nupkg.sha512"
     },
-    "Microsoft.Orleans.Analyzers/7.1.1": {
+    "Microsoft.Orleans.Analyzers/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c4Ec/fwjFX/0YWy2l8M/AYEluduG2QuoJgHVkXeZHEBh1U2GtfT9h0vpoBceNEZ0w3zyl88GUlb7x/WizHoQHw==",
-      "path": "microsoft.orleans.analyzers/7.1.1",
-      "hashPath": "microsoft.orleans.analyzers.7.1.1.nupkg.sha512"
+      "sha512": "sha512-/YaW/JE1WMJJRALNAdLjsOO7F5FWcFMglWEW+UXBFgsPfchQC1W0jTgRc7cBDsOPT6ceQv0MRZFy8mICEBuwaA==",
+      "path": "microsoft.orleans.analyzers/7.1.2",
+      "hashPath": "microsoft.orleans.analyzers.7.1.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.CodeGenerator/7.1.1": {
+    "Microsoft.Orleans.CodeGenerator/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KO2Mrx2K+d1q9FIvtW6mJilDcia2XF3aFVfkd2W4PYL51fKW7bKbTwiV4t8P+MrZge1u1TizZ1F1HRI4YuIhdg==",
-      "path": "microsoft.orleans.codegenerator/7.1.1",
-      "hashPath": "microsoft.orleans.codegenerator.7.1.1.nupkg.sha512"
+      "sha512": "sha512-oldxOEeonBAbQ8j3tl6KQ3vEZAIJb0N73ItHTOiaJDyvUlkEeko5Wb+nR2C5jXhqYAK+9/RgvFZJyFaS7pk2gA==",
+      "path": "microsoft.orleans.codegenerator/7.1.2",
+      "hashPath": "microsoft.orleans.codegenerator.7.1.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core/7.1.1": {
+    "Microsoft.Orleans.Core/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ihvc3kZxDxe/U97r9k7wWrHC+B+91GjBMx5+GyJ6TizaFrbUoHdet8oJow9eOAYagrP4is1uQqM5etFGjf1VSQ==",
-      "path": "microsoft.orleans.core/7.1.1",
-      "hashPath": "microsoft.orleans.core.7.1.1.nupkg.sha512"
+      "sha512": "sha512-cNxTiNEisZ7BzUJRZRR9SLn7b0Psg/7Th0LzXsfPpqEgQUzE9qfuJMBy+fzipijLccGk5v4GjUGEAAhOysBoHQ==",
+      "path": "microsoft.orleans.core/7.1.2",
+      "hashPath": "microsoft.orleans.core.7.1.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core.Abstractions/7.1.1": {
+    "Microsoft.Orleans.Core.Abstractions/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IxsAoLQEA8XjQZUm8HdhdaI2ynPUTkoUhTaGxhVAkwkj0kGCGSJ0TYjafYZ7TVM9aH7bAeB9JMp2QOJq2ej9sA==",
-      "path": "microsoft.orleans.core.abstractions/7.1.1",
-      "hashPath": "microsoft.orleans.core.abstractions.7.1.1.nupkg.sha512"
+      "sha512": "sha512-6YSR3+t76KcZpIAKSBPmSe9x6zHav/KaKjJruy9tAmd/ADnroCCI023uPqsJZwO9b/OZ2VCZ3LgMLf0c7YBnQw==",
+      "path": "microsoft.orleans.core.abstractions/7.1.2",
+      "hashPath": "microsoft.orleans.core.abstractions.7.1.2.nupkg.sha512"
     },
     "Microsoft.Orleans.Persistence.Memory/7.1.1": {
       "type": "package",
@@ -460,33 +474,40 @@
       "path": "microsoft.orleans.persistence.memory/7.1.1",
       "hashPath": "microsoft.orleans.persistence.memory.7.1.1.nupkg.sha512"
     },
-    "Microsoft.Orleans.Runtime/7.1.1": {
+    "Microsoft.Orleans.Reminders/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B3w3cZTrgQY+tVV50w5M7HpQfv1BDX7B6uJ4FkZni+lAWWRJPRmw82iDsG12L7cZo9kfxnXv6lsI72+lYRRPVg==",
-      "path": "microsoft.orleans.runtime/7.1.1",
-      "hashPath": "microsoft.orleans.runtime.7.1.1.nupkg.sha512"
+      "sha512": "sha512-QbIM11LzEl9YVGAgJgzbg5s5/kE9Zt300eLfyHbPcjIDwcns9PSO8w+jPhR6fVroYq2bFBLHgF0CHn5fFK76Qw==",
+      "path": "microsoft.orleans.reminders/7.1.2",
+      "hashPath": "microsoft.orleans.reminders.7.1.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Sdk/7.1.1": {
+    "Microsoft.Orleans.Runtime/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-M+XIF3Tw6H7XwGinEGfXl4E7zmfQmTeVuPtBLwKDHMV74omkYkwjND2pxKgpLM48WJRBJBVrpyDDVh2DrY25iw==",
-      "path": "microsoft.orleans.sdk/7.1.1",
-      "hashPath": "microsoft.orleans.sdk.7.1.1.nupkg.sha512"
+      "sha512": "sha512-JX3EItavz7oelUhOVtiFlvK6uqkOhGiCMes91NeQZI+4dL1yD9Xny1agtScl8RYbiG2PLKPdcWVPXz0JQxlGfA==",
+      "path": "microsoft.orleans.runtime/7.1.2",
+      "hashPath": "microsoft.orleans.runtime.7.1.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Serialization/7.1.1": {
+    "Microsoft.Orleans.Sdk/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ByDObmxNlySdP9cuEvRd1N+lifOdyflzhX0XvImJoWsoUF7Zj8Q1WQJ7N9JKPGJCyHdKJzTZYpuHEU62PwqwtA==",
-      "path": "microsoft.orleans.serialization/7.1.1",
-      "hashPath": "microsoft.orleans.serialization.7.1.1.nupkg.sha512"
+      "sha512": "sha512-WQQ8t5LrOawLFFT2wfY+FPp8rO2s6PJp5TQ5bwLfv4gplmrAhJ33V49d6JSPcP/0X7vE9/faNBvqrh6wlKbqOg==",
+      "path": "microsoft.orleans.sdk/7.1.2",
+      "hashPath": "microsoft.orleans.sdk.7.1.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Serialization.Abstractions/7.1.1": {
+    "Microsoft.Orleans.Serialization/7.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-X+xZ/k6ME3q5R8Du+vwfv9y74VUiUCeb0Z50D7ydk7f33x6Wb6B+K+RTKrX+Bqdn48OfkzZJnn4Y9KQvx+9ksw==",
-      "path": "microsoft.orleans.serialization.abstractions/7.1.1",
-      "hashPath": "microsoft.orleans.serialization.abstractions.7.1.1.nupkg.sha512"
+      "sha512": "sha512-CxFkzTGBPhuZBFtEsbY1Z7VkWqR6nFPmzeH9HWNxOafHv80200rQlxR72HZFZFOH9niE5ZgVJVAEGeTdERJdZA==",
+      "path": "microsoft.orleans.serialization/7.1.2",
+      "hashPath": "microsoft.orleans.serialization.7.1.2.nupkg.sha512"
+    },
+    "Microsoft.Orleans.Serialization.Abstractions/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rfHwogUtWOcaimMX1dO9u8GyLtqg7XyIuUkbMu2FzvOr0W19BcBUOZK0LeC1pCN0GKsGkUI9EJOmiXvNv4FarA==",
+      "path": "microsoft.orleans.serialization.abstractions/7.1.2",
+      "hashPath": "microsoft.orleans.serialization.abstractions.7.1.2.nupkg.sha512"
     },
     "Microsoft.Orleans.Server/7.1.1": {
       "type": "package",
