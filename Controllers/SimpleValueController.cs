@@ -47,5 +47,23 @@ namespace OrleansWebAPI7AppDemo.Controllers
             animal.Age = 20;
             return animal;
         }
+
+        [HttpGet()]
+        public int TestInt()
+        {
+            int n = 0;
+            for (int i = 1; i < 9; i++)
+            {
+                n = n + i;
+            }
+            return n;
+        }
+
+        [HttpGet()]
+        public EmptyResult Emp()
+        {
+            return new EmptyResult();
+        }
+        
     }
 }
